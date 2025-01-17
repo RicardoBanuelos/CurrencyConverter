@@ -32,3 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 src/main/resources/application-secrets.yml
+out/artifacts/api_jar/api.jar
