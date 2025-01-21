@@ -5,13 +5,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ExchangeRateApiProvider {
-    @Value("${CURRENCIES_ENDPOINT}")
+    @Value("${api.currencies_endpoint}")
     private String currenciesEndpoint;
 
-    @Value("${RATES_ENDPOINT}")
+    @Value("${api.rates_endpoint}")
     private String ratesEndpoint;
 
-    @Value("${API_KEY}")
+    @Value("${api.key}")
     private String apiKey;
 
     public String getCurrenciesEndpoint() {

@@ -1,3 +1,8 @@
 spring:
   config:
     import: optional:classpath:application-secrets.yml
+
+api:
+  currencies_endpoint: ${CURRENCIES_ENDPOINT}
+  rates_endpoint: ${RATES_ENDPOINT}
+  key: ${API_KEY}
