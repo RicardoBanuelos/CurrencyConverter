@@ -30,9 +30,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       env: 
-        RATES_ENDPOINT: ${RATES_ENDPOINT}
-        CURRENCIES_ENDPOINT: ${CURRENCIES_ENDPOINT}
-        API_KEY: ${API_KEY}
+        RATES_ENDPOINT: ${secrets.RATES_ENDPOINT}
+        CURRENCIES_ENDPOINT: ${secrets.CURRENCIES_ENDPOINT}
+        API_KEY: ${secrets.API_KEY}
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
